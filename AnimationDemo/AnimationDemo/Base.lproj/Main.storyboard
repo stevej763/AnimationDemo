@@ -1,40 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qzV-PX-eFD">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Semi Circle Menu View Controller-->
+        <scene sceneID="Gbb-vD-1eR">
+            <objects>
+                <viewController id="aie-ZK-Ipt" customClass="SemiCircleMenuViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eg4-ni-1tt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hPi-Xg-V6d"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TIm-VN-rVs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZD-jJ-8Ph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="933"/>
+        </scene>
+        <!--Animated Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnimatedMenuViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-ii-flE">
-                                <rect key="frame" x="0.0" y="800" width="414" height="122"/>
+                                <rect key="frame" x="0.0" y="803" width="414" height="160"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-G1-8lf">
                                         <rect key="frame" x="185" y="8" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="0.59750047929447858" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxt-nH-Uh9">
                                         <rect key="frame" x="185" y="8" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="tintColor" red="0.85098039219999999" green="0.5450980392" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="chevron.up.circle" catalog="system"/>
+                                        <state key="normal" image="chevron.up.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
                                         <connections>
                                             <action selector="openMenuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1e8-Et-gX1"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-fF-lXJ">
+                                        <rect key="frame" x="50" y="86" width="314" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I68-lj-fBd">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="i37-jd-t44"/>
+                                                    <constraint firstAttribute="width" constant="44" id="vgi-ek-4zS"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="pencil.circle" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pencilButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3z-DC-5do"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ms-fG-BxI">
+                                                <rect key="frame" x="90" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Ivk-IT-aa5"/>
+                                                    <constraint firstAttribute="width" constant="44" id="mfm-ox-Pss"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="tag.circle" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tagButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NW2-1J-UgP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozj-Db-pHR">
+                                                <rect key="frame" x="180" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="9vN-Wc-gKE"/>
+                                                    <constraint firstAttribute="height" constant="44" id="JZs-JI-hjo"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="location.circle" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xI4-Qy-9hD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dl-te-qha">
+                                                <rect key="frame" x="270" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.047058823530000002" green="0.13725490200000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="NuC-2g-FAG"/>
+                                                    <constraint firstAttribute="width" constant="44" id="lug-V9-Sxi"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="plus.circle" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x20-JR-Bqx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="u8I-zp-Pdy"/>
+                                    <constraint firstAttribute="trailing" secondItem="x3L-fF-lXJ" secondAttribute="trailing" constant="50" id="Hud-5M-4l0"/>
+                                    <constraint firstAttribute="bottom" secondItem="x3L-fF-lXJ" secondAttribute="bottom" constant="30" id="KVN-Rz-UQ6"/>
+                                    <constraint firstItem="x3L-fF-lXJ" firstAttribute="leading" secondItem="lFZ-ii-flE" secondAttribute="leading" constant="50" id="fGP-vD-bxR"/>
+                                    <constraint firstAttribute="height" constant="160" id="u8I-zp-Pdy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -42,22 +129,50 @@
                         <constraints>
                             <constraint firstItem="lFZ-ii-flE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8s7-tv-SQE"/>
                             <constraint firstItem="lFZ-ii-flE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nb5-61-jWZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFZ-ii-flE" secondAttribute="bottom" constant="-60" id="RuC-Ib-30y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFZ-ii-flE" secondAttribute="bottom" constant="-101" id="RuC-Ib-30y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yl0-mt-Mtn"/>
                     <connections>
                         <outlet property="buttonFillView" destination="cc6-G1-8lf" id="NgH-Sy-EMo"/>
+                        <outlet property="menuButtonFour" destination="8dl-te-qha" id="h2F-tw-w4P"/>
+                        <outlet property="menuButtonOne" destination="I68-lj-fBd" id="VCd-Dx-WGQ"/>
+                        <outlet property="menuButtonThree" destination="ozj-Db-pHR" id="dJz-Al-pl2"/>
+                        <outlet property="menuButtonTwo" destination="3ms-fG-BxI" id="hFb-Hb-vEC"/>
                         <outlet property="menuView" destination="lFZ-ii-flE" id="5eL-n6-s4M"/>
                         <outlet property="toggleMenuButton" destination="rxt-nH-Uh9" id="HPa-Gx-oU1"/>
+                        <segue destination="aie-ZK-Ipt" kind="show" identifier="ToSemiCirclePage" id="0L3-zj-O1q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wth-fU-CYX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qzV-PX-eFD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PWd-cD-Y0u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2qg-d8-hyP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMe-Uj-ILw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="chevron.up.circle" catalog="system" width="128" height="121"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="tag.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

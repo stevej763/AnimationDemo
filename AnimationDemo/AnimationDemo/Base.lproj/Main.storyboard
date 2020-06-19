@@ -14,14 +14,137 @@
                     <view key="view" contentMode="scaleToFill" id="eg4-ni-1tt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mke-dN-mV7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="03Z-Sp-cHT">
+                                <rect key="frame" x="0.0" y="800" width="414" height="62"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="w01-yv-2Pr"/>
+                                </constraints>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxm-gm-kAE">
+                                <rect key="frame" x="0.0" y="711" width="414" height="151"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BG-yX-PoD">
+                                        <rect key="frame" x="185" y="97" width="44" height="44"/>
+                                        <color key="backgroundColor" red="0.149741292" green="0.68180990220000004" blue="0.37728786469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="eTE-T1-COG"/>
+                                            <constraint firstAttribute="height" constant="44" id="qhU-yN-5AE"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npl-ba-gMJ">
+                                        <rect key="frame" x="185" y="97" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7lw-Px-wJG"/>
+                                            <constraint firstAttribute="width" constant="44" id="E8t-GM-0Lo"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="circle.grid.hex.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="expandMenuPressed:" destination="aie-ZK-Ipt" eventType="touchUpInside" id="HEa-Bc-eor"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zx-s2-Vqf">
+                                        <rect key="frame" x="97" y="99" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7Fc-iR-LOm"/>
+                                            <constraint firstAttribute="width" constant="50" id="X0q-2t-2SG"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="paperclip.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="paperclipPressed:" destination="aie-ZK-Ipt" eventType="touchUpInside" id="YPs-0s-wNH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPI-cS-Qwf">
+                                        <rect key="frame" x="267" y="99" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0BC-Ow-Wct"/>
+                                            <constraint firstAttribute="height" constant="50" id="tmh-qa-DYE"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="pencil.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pencilPressed:" destination="aie-ZK-Ipt" eventType="touchUpInside" id="D9c-fU-hHt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hr-qC-ykY">
+                                        <rect key="frame" x="229.33333333333334" y="35" width="35.333333333333343" height="34"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="gauge" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="meterPressed:" destination="aie-ZK-Ipt" eventType="touchUpInside" id="6rY-GX-KBY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2u-VW-H0H">
+                                        <rect key="frame" x="149.33333333333334" y="35" width="35.333333333333343" height="34"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="book.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bookPressed:" destination="aie-ZK-Ipt" eventType="touchUpInside" id="NCB-v4-CVV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Zx-s2-Vqf" firstAttribute="top" secondItem="2Hr-qC-ykY" secondAttribute="bottom" constant="30" id="83L-5u-6aO"/>
+                                    <constraint firstAttribute="height" constant="151" id="9FM-kB-c18"/>
+                                    <constraint firstAttribute="bottom" secondItem="GPI-cS-Qwf" secondAttribute="bottom" constant="2" id="JAw-2W-x9o"/>
+                                    <constraint firstAttribute="bottom" secondItem="7BG-yX-PoD" secondAttribute="bottom" constant="10" id="Kqq-SU-NXc"/>
+                                    <constraint firstAttribute="bottom" secondItem="npl-ba-gMJ" secondAttribute="bottom" constant="10" id="MSU-fy-way"/>
+                                    <constraint firstItem="npl-ba-gMJ" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" id="Qmx-FY-oRI"/>
+                                    <constraint firstItem="7BG-yX-PoD" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" id="R23-kg-NqY"/>
+                                    <constraint firstItem="GPI-cS-Qwf" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" constant="85" id="X1Y-Cb-Ur7"/>
+                                    <constraint firstItem="2Hr-qC-ykY" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" constant="40" id="Yqx-Zy-6hS"/>
+                                    <constraint firstItem="B2u-VW-H0H" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" constant="-40" id="bfo-Nx-9hP"/>
+                                    <constraint firstItem="6Zx-s2-Vqf" firstAttribute="centerX" secondItem="Mxm-gm-kAE" secondAttribute="centerX" constant="-85" id="mr9-sG-sex"/>
+                                    <constraint firstItem="GPI-cS-Qwf" firstAttribute="top" secondItem="B2u-VW-H0H" secondAttribute="bottom" constant="30" id="opL-GO-smM"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Zx-s2-Vqf" secondAttribute="bottom" constant="2" id="tlb-e3-w9g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.149741292" green="0.68180990220000004" blue="0.37728786469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hPi-Xg-V6d" firstAttribute="bottom" secondItem="mke-dN-mV7" secondAttribute="bottom" id="568-5a-uaR"/>
+                            <constraint firstItem="hPi-Xg-V6d" firstAttribute="bottom" secondItem="03Z-Sp-cHT" secondAttribute="bottom" id="56F-ox-qF7"/>
+                            <constraint firstAttribute="trailing" secondItem="03Z-Sp-cHT" secondAttribute="trailing" id="AWn-DD-G94"/>
+                            <constraint firstItem="Mxm-gm-kAE" firstAttribute="leading" secondItem="hPi-Xg-V6d" secondAttribute="leading" id="Bce-En-Kra"/>
+                            <constraint firstAttribute="trailing" secondItem="mke-dN-mV7" secondAttribute="trailing" id="DSx-q1-yoe"/>
+                            <constraint firstItem="mke-dN-mV7" firstAttribute="top" secondItem="eg4-ni-1tt" secondAttribute="top" id="EKI-Iu-y11"/>
+                            <constraint firstItem="mke-dN-mV7" firstAttribute="leading" secondItem="eg4-ni-1tt" secondAttribute="leading" id="PV8-Lu-qOd"/>
+                            <constraint firstItem="hPi-Xg-V6d" firstAttribute="bottom" secondItem="Mxm-gm-kAE" secondAttribute="bottom" id="Sd2-GD-879"/>
+                            <constraint firstItem="03Z-Sp-cHT" firstAttribute="leading" secondItem="hPi-Xg-V6d" secondAttribute="leading" id="VrK-9r-Z9r"/>
+                            <constraint firstItem="Mxm-gm-kAE" firstAttribute="trailing" secondItem="hPi-Xg-V6d" secondAttribute="trailing" id="uVW-dg-W8V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hPi-Xg-V6d"/>
                     </view>
                     <navigationItem key="navigationItem" id="TIm-VN-rVs"/>
+                    <connections>
+                        <outlet property="backgroundFill" destination="7BG-yX-PoD" id="4Rv-AZ-6FU"/>
+                        <outlet property="expandMenuButton" destination="npl-ba-gMJ" id="3mm-q0-bKP"/>
+                        <outlet property="menuButtonFour" destination="GPI-cS-Qwf" id="Xoo-rw-MuK"/>
+                        <outlet property="menuButtonOne" destination="6Zx-s2-Vqf" id="xPS-Y6-b9z"/>
+                        <outlet property="menuButtonThree" destination="2Hr-qC-ykY" id="w4q-8l-2hr"/>
+                        <outlet property="menuButtonTwo" destination="B2u-VW-H0H" id="Cm9-aB-LnK"/>
+                        <outlet property="menuView" destination="Mxm-gm-kAE" id="0HF-kk-D09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZD-jJ-8Ph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="933"/>
+            <point key="canvasLocation" x="340.57971014492756" y="932.8125"/>
         </scene>
         <!--Animated Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -32,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-ii-flE">
-                                <rect key="frame" x="0.0" y="803" width="414" height="160"/>
+                                <rect key="frame" x="0.0" y="804" width="414" height="160"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-G1-8lf">
                                         <rect key="frame" x="185" y="8" width="44" height="44"/>
@@ -43,7 +166,7 @@
                                         <rect key="frame" x="185" y="8" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="tintColor" red="0.85098039219999999" green="0.5450980392" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="chevron.up.circle" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
@@ -125,11 +248,11 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lFZ-ii-flE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8s7-tv-SQE"/>
                             <constraint firstItem="lFZ-ii-flE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nb5-61-jWZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFZ-ii-flE" secondAttribute="bottom" constant="-101" id="RuC-Ib-30y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFZ-ii-flE" secondAttribute="bottom" constant="-102" id="RuC-Ib-30y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -169,8 +292,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GreenBackground" width="3375" height="6000"/>
+        <image name="book.circle" catalog="system" width="128" height="121"/>
         <image name="chevron.up.circle" catalog="system" width="128" height="121"/>
+        <image name="circle.grid.hex.fill" catalog="system" width="128" height="112"/>
+        <image name="gauge" catalog="system" width="128" height="121"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
+        <image name="paperclip.circle" catalog="system" width="128" height="121"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="tag.circle" catalog="system" width="128" height="121"/>

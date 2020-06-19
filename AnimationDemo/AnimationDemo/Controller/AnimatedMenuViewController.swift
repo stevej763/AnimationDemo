@@ -65,7 +65,7 @@ class AnimatedMenuViewController: UIViewController {
             
             UIView.animate(withDuration: 1, animations: {
                 self.buttonFillView.transform = CGAffineTransform(scaleX: 11, y: 11)
-                self.menuView.transform = CGAffineTransform(translationX: 0, y: -60)
+                self.menuView.transform = CGAffineTransform(translationX: 0, y: -75)
                 self.toggleMenuButton.transform = CGAffineTransform(rotationAngle: self.radians(180) )
             }) { (true) in
                 UIView.animate(withDuration: 0.5) {
